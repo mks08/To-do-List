@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Todo List</title>
+  <style>
+    .h {
+      color: rgb(237, 147, 12);
+      font-weight: bolder;
+    }
+
+    .h:hover {
+      background-color: cadetblue;
+      color: black;
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(140, 188, 239);">
+  <div class="container d-flex flex-column p-2 rounded-3 my-md-5 bg-dark bg-gradient" style="width:auto;">
+    <h3 class="p-2" style="color: aquamarine;">Todo's List</h3>
+    <hr style="border: 2px solid rgb(140, 188, 239); border-radius: 5px;">
+    <label class="mt-3" for="title" style="color:blanchedalmond;">Title</label>
+    <input class="p-2" type="text" id="title">
+    <label class="mt-2" for="description" style="color:blanchedalmond;">Description</label>
+    <input class="p-2" type="text" id="description">
+    <div class="row mt-3">
+      <div class="col">
+        <font color="red">Deadline:</font>> <input id="deadline" class="rounded-pill p-1" type="date"
+          name="setTodaysDate" onkeydown="return false">
+      </div>
+      <div class="col d-flex justify-content-end">
+        <button id="slist" class="rounded-pill p-1 h" type="button" style="width: 25%;">Show List</button><button
+          id="add" class="rounded-pill p-1 h" type="button" style="width: 25%;">Add</button>
+      </div>
+    </div>
+  </div>
+  <div id="tlist">
+  </div>
+  <script src="script.js"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
